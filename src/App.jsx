@@ -31,26 +31,21 @@ function App() {
 
 export default App;
 
+//COMPLETED//
 //create routing
 //create routes
 //create nav bar component (PROTOTYPE)
 //set custom color pallet
 //set BG
-
 //set icon to change themes
-//review flex and postioning with tailwind css
 //create responsive navbar
-//add routing to the navbar
+//create dropdown menu for mobile
 
+//PENDING//
+//add routing to mobile navbar
 //start with homepage
 //find a maps service
 //create hero section
 //create service content section
 //create location and contact contact section
 //create footer section
-
-//inicio
-//citas
-//galleria
-//conocenos
-//contacto

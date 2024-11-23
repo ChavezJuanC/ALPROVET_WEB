@@ -10,13 +10,15 @@ function LightSwitch() {
 
     return (
         <button
-            className="border-2 rounded-full w-8"
+            className={`border-2 rounded-full w-8 ${
+                theme ? "border-softWhite" : "border-slate-950"
+            }`}
             onClick={() => {
                 toggleLights();
                 console.log(theme);
             }}
         >
-            {theme ? <>O</> : <>I</>}
+            {theme ? <>I</> : <>O</>}
         </button>
     );
 }

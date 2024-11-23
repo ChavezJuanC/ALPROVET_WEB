@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../theme/ThemeProvider";
 
 function Home() {
-    return <div>HOME</div>;
+    const { theme } = useContext(ThemeContext);
+    return (
+        <div
+            className={`w-full h-screen ${
+                theme ? "bg-softWhite" : "bg-slate-600"
+            }`}
+        >
+            HOME
+        </div>
+    );
 }
 
 export default Home;
