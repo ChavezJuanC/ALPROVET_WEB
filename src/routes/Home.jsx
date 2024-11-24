@@ -6,7 +6,7 @@ function Home() {
     return (
         <div
             className={`w-full h-screen ${
-                theme ? "bg-softWhite" : "bg-slate-600"
+                theme ? "bg-softWhite" : "bg-black"
             }`}
         >
             HOME

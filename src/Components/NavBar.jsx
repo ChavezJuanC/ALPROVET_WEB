@@ -1,22 +1,25 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import LightSwitch from "./LightSwitch";
 import { ThemeContext } from "../theme/ThemeProvider";
+import MobileMenu from "./MobileMenu";
 
 function NavBar() {
     const { theme } = useContext(ThemeContext);
+    const [showMobileMenu, setShowMobileMenu] = useState(true);
+
+    function handleClickedOption() {    
+        console.log("closing");
+        setShowMobileMenu(false);
+    }
 
     return (
-        <div className="flex justify-between items-center h-14 p-0 bg-CustomPurple">
-            <div
-                className={`sm:ml-8 ml-4 text-xl ${
-                    theme ? "text-softWhite" : "text-slate-950"
-                }`}
-            >
+        <div className="flex justify-between items-center h-14 p-0 bg-CustomPurple ">
+            <div className="sm:ml-8 ml-4 text-xl font-bold text-softWhite">
                 <Link to={"/"}>ALPROVET</Link>
             </div>
             <div
-                className={`hidden sm:flex pr-8 ${
+                className={`hidden sm:flex pr-8 text-xl font-semibold ${
                     theme ? "text-softWhite" : "text-slate-950"
                 }`}
             >
@@ -39,11 +42,14 @@ function NavBar() {
                     theme ? "text-softWhite" : "text-slate-950"
                 }`}
                 onClick={() => {
-                    console.log("Opening Menu");
+                    setShowMobileMenu(!showMobileMenu);
                 }}
             >
                 Menu
             </div>
+            {showMobileMenu && (
+                <MobileMenu handleClickedOption={handleClickedOption} />
+            )}
         </div>
     );
 }

@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../theme/ThemeProvider";
 
 function conocenos() {
-    return <div>Conocenos</div>;
+    const { theme } = useContext(ThemeContext);
+    return (
+        <div
+            className={`w-full h-screen ${theme ? "bg-softWhite" : "bg-black"}`}
+        >
+            Conocenos
+        </div>
+    );
 }
 
 export default conocenos;
-

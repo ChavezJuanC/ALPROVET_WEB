@@ -40,9 +40,9 @@ export default App;
 //set icon to change themes
 //create responsive navbar
 //create dropdown menu for mobile
+//add routing to mobile navbar
 
 //PENDING//
-//add routing to mobile navbar
 //start with homepage
 //find a maps service
 //create hero section
