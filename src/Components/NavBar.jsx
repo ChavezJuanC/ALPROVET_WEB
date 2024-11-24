@@ -8,8 +8,7 @@ function NavBar() {
     const { theme } = useContext(ThemeContext);
     const [showMobileMenu, setShowMobileMenu] = useState(true);
 
-    function handleClickedOption() {    
-        console.log("closing");
+    function handleClickedOption() {
         setShowMobileMenu(false);
     }
 

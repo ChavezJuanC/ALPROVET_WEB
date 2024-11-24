@@ -1,41 +1,49 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function MobileMenu({ handleClickedOption }) {
+    const navigate = useNavigate();
+
     return (
         <div className="w-1/2 absolute right-0 top-14 text-center bg-CusotmPurpleLight text-lg text-softWhite rounded-bl-lg md:hidden">
-            <Link
-                to={"/citas"}
+            <div
+                className="py-1.5 active:bg-CustomPurple"
                 onClick={() => {
                     handleClickedOption(false);
+                    navigate("/citas");
                 }}
             >
-                <div className="py-1.5 active:bg-CustomPurple">Citas</div>
-            </Link>
-            <Link
-                to={"/contacto"}
+                Citas
+            </div>
+
+            <div
+                className="py-1.5 active:bg-CustomPurple"
                 onClick={() => {
                     handleClickedOption(false);
+                    navigate("/contacto");
                 }}
             >
-                <div className="py-1.5 active:bg-CustomPurple">Contacto</div>
-            </Link>
-            <Link
-                to={"/galeria"}
+                Contacto
+            </div>
+
+            <div
+                className="py-1.5 active:bg-CustomPurple"
                 onClick={() => {
                     handleClickedOption(false);
+                    navigate("/citas");
                 }}
             >
-                <div className="py-1.5 active:bg-CustomPurple">Geleria</div>
-            </Link>
-            <Link
-                to={"/conocenos"}
+                Geleria
+            </div>
+            <div
+                className="py-1.5 active:bg-CustomPurple"
                 onClick={() => {
                     handleClickedOption(false);
+                    navigate("/citas");
                 }}
             >
-                <div className="py-1.5 active:bg-CustomPurple">Conocenos</div>
-            </Link>
+                Conocenos
+            </div>
         </div>
     );
 }
