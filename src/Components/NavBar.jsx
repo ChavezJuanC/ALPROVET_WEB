@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LightSwitch from "./LightSwitch";
 import { ThemeContext } from "../theme/ThemeProvider";
 import MobileMenu from "./MobileMenu";
+import { FaBars } from "react-icons/fa";
 
 function NavBar() {
     const { theme } = useContext(ThemeContext);
@@ -13,14 +14,14 @@ function NavBar() {
     }
 
     return (
-        <div className="flex justify-between items-center h-14 p-0 bg-CustomPurple ">
+        <div className="flex justify-between items-center h-14 p-0 bg-CustomPurple">
             <div className="sm:ml-8 ml-4 text-xl font-bold text-softWhite">
                 <Link to={"/"}>ALPROVET</Link>
             </div>
             <div
-                className={`hidden sm:flex pr-8 text-xl font-semibold ${
-                    theme ? "text-softWhite" : "text-slate-950"
-                }`}
+                className={
+                    "hidden sm:flex pr-8 text-xl font-semibold text-white"
+                }
             >
                 <Link to={"/citas"}>
                     <div className="mx-4">Citas</div>
@@ -37,14 +38,12 @@ function NavBar() {
                 <LightSwitch />
             </div>
             <div
-                className={`border-2 rounded-lg flex sm:hidden hover:cursor-pointer mr-4 pb-0.5 px-1 ${
-                    theme ? "text-softWhite" : "text-slate-950"
-                }`}
+                className="border-2 rounded-lg flex sm:hidden hover:cursor-pointer mr-4 py-1 px-1 text-softWhite"
                 onClick={() => {
                     setShowMobileMenu(!showMobileMenu);
                 }}
             >
-                Menu
+                <FaBars />
             </div>
             {showMobileMenu && (
                 <MobileMenu handleClickedOption={handleClickedOption} />

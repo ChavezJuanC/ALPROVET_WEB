@@ -43,9 +43,11 @@ export default App;
 //add routing to mobile navbar
 
 //PENDING//
+//add servicios route for mobile routing
 //start with homepage
-//find a maps service
 //create hero section
+
+//find a maps service
 //create service content section
 //create location and contact contact section
 //create footer section

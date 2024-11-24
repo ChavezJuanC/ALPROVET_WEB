@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../theme/ThemeProvider";
+import { RiSunFill, RiMoonFill } from "react-icons/ri";
 
 function LightSwitch() {
     const { theme, setTheme } = useContext(ThemeContext);
@@ -10,15 +11,14 @@ function LightSwitch() {
 
     return (
         <button
-            className={`border-2 rounded-full w-8 ${
-                theme ? "border-softWhite" : "border-slate-950"
+            className={`border-2 rounded-full w-9  flex items-center px-1 border-softWhite ${
+                theme ? "justify-start" : "justify-end"
             }`}
             onClick={() => {
                 toggleLights();
-                console.log(theme);
             }}
         >
-            {theme ? <>I</> : <>O</>}
+            {theme ? <RiMoonFill /> : <RiSunFill className="text-softWhite" />}
         </button>
     );
 }
