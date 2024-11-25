@@ -4,9 +4,9 @@ export default {
     theme: {
         extend: {
             colors: {
-                softWhite: "#F4F4F4", // Replace with your custom color
+                softWhite: "#F4F4F4", 
                 CustomPurple: "#6823A2",
-                CusotmPurpleLight: "#B596CC", // Another custom color example
+                CusotmPurpleLight: "#B596CC",
             },
         },
     },

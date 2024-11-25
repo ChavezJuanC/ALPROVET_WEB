@@ -6,7 +6,9 @@ function Home() {
     return (
         <div
             className={`w-full h-screen ${
-                theme ? "bg-softWhite" : "bg-black"
+                theme
+                    ? "bg-gradient-to-b from-softWhite to-CusotmPurpleLight"
+                    : "bg-gradient-to-b from-[#6823A2] to-[#2E0A5F]"
             }`}
         >
             HOME
