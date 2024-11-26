@@ -7,7 +7,7 @@ import { FaBars } from "react-icons/fa";
 
 function NavBar() {
     const { theme } = useContext(ThemeContext);
-    const [showMobileMenu, setShowMobileMenu] = useState(true);
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     function handleClickedOption() {
         setShowMobileMenu(false);
@@ -15,7 +15,7 @@ function NavBar() {
 
     return (
         <div className="flex justify-between items-center h-14 p-0 bg-CustomPurple">
-            <div className="sm:ml-8 ml-4 text-xl font-bold text-softWhite">
+            <div className="sm:ml-8 ml-4 text-xl lg:text-2xl font-bold text-softWhite">
                 <Link to={"/"}>ALPROVET</Link>
             </div>
             <div
