@@ -3,6 +3,7 @@ import { ThemeContext } from "../theme/ThemeProvider";
 import { useNavigate } from "react-router-dom";
 import Services from "../Components/Services";
 import HomeContact from "../Components/HomeContact";
+import Map from "../Components/Map";
 
 function Home() {
     const { theme } = useContext(ThemeContext);
@@ -47,8 +48,19 @@ function Home() {
                 </div>
                 <Services />
             </div>
-            <div className="2xl:hidden block w-full mx-auto mb-10">
+            <div className="2xl:hidden block w-1/2 mx-auto mb-10">
                 <HomeContact />
+            </div>
+            <div className="block xl:flex justify-between">
+                <div className="w-1/2">RESENAS</div>
+                <div className="2xl:mx-0 mt-10 xl:w-1/2">
+                    <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-5xl text-center mb-12">
+                        Ubicacion
+                    </h1>
+                    <div className="w-full">
+                        <Map />
+                    </div>
+                </div>
             </div>
         </div>
     );
