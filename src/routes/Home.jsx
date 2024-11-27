@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../theme/ThemeProvider";
 import { useNavigate } from "react-router-dom";
+import Services from "../Components/Services";
+import HomeContact from "../Components/HomeContact";
 
 function Home() {
     const { theme } = useContext(ThemeContext);
@@ -8,7 +10,7 @@ function Home() {
 
     return (
         <div
-            className={`w-full h-screen ${
+            className={`w-full h-full ${
                 theme
                     ? "bg-gradient-to-b from-softWhite to-CusotmPurpleLight"
                     : "bg-gradient-to-b from-[#6823A2] to-[#2E0A5F]"
@@ -39,15 +41,17 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <div className="md:flex justify-between block">
+                <div className="hidden 2xl:block w-1/2">
+                    <HomeContact />
+                </div>
+                <Services />
+            </div>
+            <div className="2xl:hidden block w-full mx-auto mb-10">
+                <HomeContact />
+            </div>
         </div>
     );
 }
 
 export default Home;
-
-//Idead for hero section//
-
-//register all new colors
-//turn logo into png so I can change the bg based on theme?
-//AI a dark theme version of logo?
-//Plan out mobile design
