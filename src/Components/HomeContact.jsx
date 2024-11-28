@@ -34,3 +34,13 @@ function HomeContact() {
 }
 
 export default HomeContact;
+
+//To Do//
+//make a review card comp.
+//make review section with empty cards
+//maybe turn the review data into a json
+//feed the review section through json
+
+//Create footer section
+
+//Read through and implement gpt design suggestions

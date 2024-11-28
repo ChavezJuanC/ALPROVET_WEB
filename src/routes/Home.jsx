@@ -48,7 +48,7 @@ function Home() {
                 </div>
                 <Services />
             </div>
-            <div className="2xl:hidden block w-1/2 mx-auto mb-10">
+            <div className="2xl:hidden block md:w-1/2 mx-auto mb-10">
                 <HomeContact />
             </div>
             <div className="block xl:flex justify-between">
