@@ -5,6 +5,7 @@ import Services from "../Components/Services";
 import HomeContact from "../Components/HomeContact";
 import Map from "../Components/Map";
 import Reviews from "../Components/Reviews";
+import Footer from "../Components/Footer";
 
 function Home() {
     const { theme } = useContext(ThemeContext);
@@ -70,6 +71,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
@@ -78,7 +80,7 @@ export default Home;
 
 //To Do//
 
-//Create footer section
+//Mobile footer fix 
 
 //Turn the review data into a json
 //Feed the review section through json

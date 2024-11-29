@@ -9,7 +9,7 @@ function HomeContact() {
                 Contacto
             </h1>
             <div
-                className="text-slate-950 bg-softWhite md:text-lg py-5 
+                className="text-slate-950 bg-softWhite md:text-lg py-10 
             text-base border-2 border-softWhite 2xl:w-1/2 w-3/4 mx-auto 2xl:mt-14 mt-8 rounded-md shadow-lg"
             >
                 <h2 className="py-1">
