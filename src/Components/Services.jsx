@@ -43,5 +43,3 @@ function Services() {
 
 export default Services;
 
-//to do//
-//add icons to contact section

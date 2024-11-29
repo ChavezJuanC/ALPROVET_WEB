@@ -80,9 +80,11 @@ export default Home;
 
 //To Do//
 
-//Mobile footer fix 
-
 //Turn the review data into a json
 //Feed the review section through json
+
+//Create LOCATION CARD
+
+//----FINISH SCHOOL WORK----//
 
 //Find fonts with AI

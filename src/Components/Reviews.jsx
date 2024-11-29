@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReviewCard from "./ReviewCard";
+import reviews from "../Data/reviews.json";
 
 function Reviews() {
+    useEffect(() => {
+        console.log(reviews);
+    }, []);
     return (
         <div
             style={{ height: "350px", width: "80%" }}
