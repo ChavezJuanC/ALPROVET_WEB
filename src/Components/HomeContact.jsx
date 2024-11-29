@@ -10,7 +10,7 @@ function HomeContact() {
             </h1>
             <div
                 className="text-slate-950 bg-softWhite md:text-lg py-5 
-            text-base border-4 border-softWhite 2xl:w-1/2 w-3/4 mx-auto 2xl:mt-14 mt-8 rounded-md"
+            text-base border-2 border-softWhite 2xl:w-1/2 w-3/4 mx-auto 2xl:mt-14 mt-8 rounded-md shadow-lg"
             >
                 <h2 className="py-1">
                     <BiPhone className="inline lg:text-2xl text-lg" />{" "}
@@ -35,12 +35,3 @@ function HomeContact() {
 
 export default HomeContact;
 
-//To Do//
-//make a review card comp.
-//make review section with empty cards
-//maybe turn the review data into a json
-//feed the review section through json
-
-//Create footer section
-
-//Read through and implement gpt design suggestions

@@ -2,15 +2,15 @@ import React from "react";
 
 function Services() {
     return (
-        <div className="block bg-[#eeeeec] w-full 2xl:w-1/2 2xl:pt-5 pb-8">
+        <div className="block bg-[#eeeeec] w-full 2xl:w-1/2 pt-10 pb-20">
             <div className="flex justify-center">
-                <div className="pl-10 pt-8 2xl:pt-2">
+                <div className="md:pl-24 pl-10 pt-8 2xl:pt-2">
                     <div className="text-left">
-                        <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-5xl my-5">
+                        <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-5xl mt-5 mb-10">
                             Servicios Para Tu Amigo
                         </h1>
                     </div>
-                    <div className="flex justify-start text-slate-900 2xl:pl-6 md:text-lg text-sm px-2">
+                    <div className="flex justify-start text-slate-900 2xl:pl-6 md:text-lg text-sm px-5">
                         <ul className="mr-5 list-disc text-xl">
                             <li className="py-1">Consulta</li>
                             <li className="py-1">Vacunas</li>
