@@ -80,9 +80,6 @@ export default Home;
 
 //To Do//
 
-//Turn the review data into a json
-//Feed the review section through json
-
 //Create LOCATION CARD
 
 //----FINISH SCHOOL WORK----//
