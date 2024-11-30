@@ -6,9 +6,9 @@ function Footer() {
         <div className="flex justify-between bg-CustomPurple text-softWhite py-3 px-3 mt-20">
             <div>
                 <div className="py-4">
-                    <BsInstagram className="inline mx-1 text-2xl" />
-                    <BsFacebook className="inline mx-1 text-2xl" />
-                    <BsWhatsapp className="inline mx-1 text-2xl" />
+                    <BsInstagram className="inline mx-2 text-2xl" />
+                    <BsFacebook className="inline mx-2 text-2xl" />
+                    <BsWhatsapp className="inline mx-2 text-2xl" />
                 </div>
             </div>
             <div className="pt-1">

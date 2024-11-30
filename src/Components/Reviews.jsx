@@ -1,27 +1,23 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReviewCard from "./ReviewCard";
 import reviews from "../Data/reviews.json";
 
 function Reviews() {
-    useEffect(() => {
-        console.log(reviews);
-    }, []);
+    const userReviews = reviews.map((review) => (
+        <ReviewCard
+            userName={review.userName}
+            review={review.review}
+            img={review.ImagePath}
+            link={review.link}
+        />
+    ));
+
     return (
         <div
             style={{ height: "350px", width: "80%" }}
-            className="mx-auto py-4 md:py-6 2xl:py-10"
+            className="mx-auto py-4 md:py-6"
         >
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
-            <ReviewCard />
+            {userReviews}
         </div>
     );
 }

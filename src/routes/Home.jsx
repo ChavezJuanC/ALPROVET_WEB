@@ -19,11 +19,11 @@ function Home() {
                     : "bg-gradient-to-b from-[#6823A2] to-[#2E0A5F]"
             }`}
         >
-            <div className="md:flex md:justify-center bg-[#6c2c9e] pb-20 lg:pb-6 pt-24 2xl:pt-20">
+            <div className="md:flex md:justify-center bg-[#6924a3] pb-20 lg:pb-6 pt-20 lg:pt-5">
                 <img
                     src="src/assets/AlproVetLogo.jpeg"
                     alt="LOGO"
-                    className="h-1/2 md:w-1/3 lg:w-1/4 md:mr-2 rounded-full"
+                    className="h-1/2 md:w-1/3 lg:w-1/5 md:mr-2 rounded-full"
                 />
                 <div className="md:w-1/3 my-auto text-center md:ml-2">
                     <h1 className="text-white font-extrabold text-5xl lg:text-8xl mt-16 lg:mt-2 ">
@@ -54,20 +54,20 @@ function Home() {
                 <HomeContact />
             </div>
             <div className="block xl:flex justify-between">
-                <div className="w-3/4 xl:w-1/2 mx-auto xl:px-24">
-                    <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-5xl text-center mb-12 mt-24 pt-6">
-                        Resenas
-                    </h1>
-                    <div className="bg-softWhite border-2 rounded-md border-softWhite shadow-lg overflow-auto">
-                        <Reviews />
-                    </div>
-                </div>
                 <div className="2xl:mx-0 mt-10 xl:w-1/2">
-                    <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-5xl text-center mb-12 lg:mt-20 mt-28">
+                    <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-6xl text-center mb-12 lg:mt-20 mt-28">
                         Ubicacion
                     </h1>
                     <div className="w-full">
                         <Map />
+                    </div>
+                </div>
+                <div className="w-3/4 xl:w-1/2 mx-auto xl:px-24">
+                    <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-6xl text-center mb-8 mt-24 pt-6">
+                        Resenas
+                    </h1>
+                    <div className="rounded-md border-softWhite overflow-auto bg-transparent shadow-xl">
+                        <Reviews />
                     </div>
                 </div>
             </div>
