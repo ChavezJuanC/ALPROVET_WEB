@@ -78,10 +78,12 @@ function Home() {
 
 export default Home;
 
-//To Do//
+//To Do
 
-//Create LOCATION CARD
+//link contacts
+//Design quick and simple contact us page
+////Form + contact methods.. log to console for now
 
-//----FINISH SCHOOL WORK----//
 
-//Find fonts with AI
+//fix spelling
+//Design get to know us section

@@ -1,6 +1,7 @@
 import React from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import PinCard from "./PinCard";
 
 function Map() {
     return (
@@ -18,9 +19,8 @@ function Map() {
             <Marker position={[19.279284135190853, -99.12272517461999]}>
                 {" "}
                 {/* Updated coordinates */}
-                <Popup>
-                    Here are the specified coordinates: <br />
-                    19.279284135190853, -99.12272517461999
+                <Popup >
+                    <PinCard />
                 </Popup>
             </Marker>
         </MapContainer>
