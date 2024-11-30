@@ -14,7 +14,7 @@ function Reviews() {
 
     return (
         <div
-            style={{ height: "350px", width: "80%" }}
+            style={{ height: "400px", width: "80%" }}
             className="mx-auto py-4 md:py-6"
         >
             {userReviews}

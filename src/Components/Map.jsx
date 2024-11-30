@@ -9,7 +9,7 @@ function Map() {
             center={[19.279284135190853, -99.12272517461999]} // Updated coordinates
             zoom={13}
             scrollWheelZoom={false}
-            style={{ height: "350px", width: "80%" }} // Ensure the map has dimensions
+            style={{ height: "400px", width: "80%" }} // Ensure the map has dimensions
             className="mt-8 mx-auto border-2 rounded-md border-softWhite"
         >
             <TileLayer

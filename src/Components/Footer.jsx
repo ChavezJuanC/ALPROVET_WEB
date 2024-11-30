@@ -3,7 +3,7 @@ import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 function Footer() {
     return (
-        <div className="flex justify-between bg-CustomPurple text-softWhite py-3 px-3 mt-20">
+        <div className="flex justify-between bg-CustomPurple text-softWhite py-3 px-3">
             <div>
                 <div className="py-4">
                     <BsInstagram className="inline mx-2 text-2xl" />

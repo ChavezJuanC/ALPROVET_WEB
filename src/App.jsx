@@ -9,6 +9,7 @@ import Conocenos from "./routes/Conocenos.jsx";
 import Contacto from "./routes/Contacto.jsx";
 import NavBar from "./Components/NavBar.jsx";
 import ThemeProvider from "./theme/ThemeProvider.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                         <Route path="/conocenos" element={<Conocenos />} />
                         <Route path="/contacto" element={<Contacto />} />
                     </Routes>
+                    <Footer />
                 </BrowserRouter>
             </ThemeProvider>
         </>

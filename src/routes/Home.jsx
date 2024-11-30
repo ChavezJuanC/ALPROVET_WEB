@@ -5,7 +5,6 @@ import Services from "../Components/Services";
 import HomeContact from "../Components/HomeContact";
 import Map from "../Components/Map";
 import Reviews from "../Components/Reviews";
-import Footer from "../Components/Footer";
 
 function Home() {
     const { theme } = useContext(ThemeContext);
@@ -63,7 +62,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="w-3/4 xl:w-1/2 mx-auto xl:px-24">
-                    <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-6xl text-center mb-8 mt-24 pt-6">
+                    <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-6xl text-center mb-12 mt-24 pt-6">
                         Resenas
                     </h1>
                     <div className="rounded-md border-softWhite overflow-auto bg-transparent shadow-xl">
@@ -71,7 +70,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <div className="h-24"></div>
         </div>
     );
 }
@@ -81,9 +80,6 @@ export default Home;
 //To Do
 
 //link contacts
-//Design quick and simple contact us page
-////Form + contact methods.. log to console for now
-
 
 //fix spelling
 //Design get to know us section
