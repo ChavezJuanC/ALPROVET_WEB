@@ -37,7 +37,7 @@ function Home() {
                         }}
                         className="border-2 border-white text-softWhite rounded-md text-lg px-1
                         py-0.5 w-28 mt-4 mx-auto font-semibold lg:text-2xl lg:w-36 lg:px-2 lg:py-1 lg:border-4
-                        lg:animate-pulse duration-1000 shadow-xl"
+                        lg:animate-pulse duration-1000 shadow-xl hover:cursor-pointer"
                     >
                         Haz tu cita
                     </div>

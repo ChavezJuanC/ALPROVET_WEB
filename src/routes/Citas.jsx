@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../theme/ThemeProvider";
+import AppointmentForm from "../Components/AppointmentForm";
 
 function Citas() {
     const { theme } = useContext(ThemeContext);
@@ -11,7 +12,7 @@ function Citas() {
                     : "bg-gradient-to-b from-[#6823A2] to-[#2E0A5F]"
             }`}
         >
-            Citas
+            <AppointmentForm />
         </div>
     );
 }
