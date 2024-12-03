@@ -1,11 +1,21 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../theme/ThemeProvider";
-import { BiArrowToBottom, BiDownArrow } from "react-icons/bi";
 import { BsArrowDown } from "react-icons/bs";
 import DoctorCard from "../Components/DoctorCard";
 
 function conocenos() {
     const { theme } = useContext(ThemeContext);
+
+    function handleArrowClick() {
+        if (window.innerWidth < 600) {
+            window.scrollTo({ top: 850, behavior: "smooth" });
+        } else if (window.innerWidth >= 601 && window.innerWidth < 900) {
+            window.scrollTo({ top: 500, behavior: "smooth" });
+        } else {
+            window.scrollTo({ top: 800, behavior: "smooth" });
+        }
+    }
+
     return (
         <div
             className={`w-full ${
@@ -42,9 +52,15 @@ function conocenos() {
                 </div>
             </div>
             <h1 className="text-CustomPurple font-bold text-3xl lg:text-4xl text-center mt-24 mb-10">
-                <BsArrowDown className="mx-6 text-softWhite animate-bounce font-bold inline" />
+                <BsArrowDown
+                    className="mx-6 text-softWhite animate-bounce font-bold inline"
+                    onClick={handleArrowClick}
+                />
                 Doctores
-                <BsArrowDown className="mx-6 text-softWhite animate-bounce font-bold inline" />
+                <BsArrowDown
+                    className="mx-6 text-softWhite animate-bounce font-bold inline"
+                    onClick={handleArrowClick}
+                />
             </h1>
             <div className="flex justify-center pb-28 flex-wrap">
                 <DoctorCard imgSource={"src/assets/AlproVetLogo.jpeg"} />

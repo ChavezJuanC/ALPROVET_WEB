@@ -21,7 +21,24 @@ function AppointmentForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
+        const appointmentMessage = `Nueva Cita! \nFecha:${
+            formData.date
+        }\nHora:${formData.time}\nTel:${formData.phone}\nNombre:${
+            formData.name
+        }\nMascota:${formData.petName}\nEspecie:${
+            formData.species
+        }\nPrimera Vez:${formData.isFirstVisit == true ? "Si" : "No"}`;
+        console.log(appointmentMessage);
+        setFormData({
+            date: "",
+            time: "",
+            name: "",
+            phone: "",
+            petName: "",
+            species: "perro",
+            isFirstVisit: false,
+        });
+        //notification
     };
 
     const generateTimeOptions = (day) => {
@@ -191,7 +208,8 @@ function AppointmentForm() {
 
                     <button
                         type="submit"
-                        className="w-full bg-customPurple text-CustomPurple py-3 rounded-md font-medium hover:bg-customPurpleLight transition duration-300 shadow-md border-2 hover:shadow-xl"
+                        className="w-full bg-customPurple text-CustomPurple py-3 rounded-md font-medium 
+                        hover:bg-customPurpleLight transition duration-300 shadow-md border-2 hover:shadow-xl"
                     >
                         Agendar Cita
                     </button>
@@ -202,6 +220,5 @@ function AppointmentForm() {
 }
 
 export default AppointmentForm;
-
 
 //Dont forget to write a function that will validate the data make sure day is not sunday and if sat time > 16 make sure to choose a valid date and time

@@ -17,7 +17,9 @@ function Contacto() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formData);
+        const newContactMessage = `Nuevo Contacto! \nNombre:${formData.name} \nNumero/Contacto:${formData.email}\nMensaje:${formData.message}`;
+        console.log(newContactMessage);
+        setFormData({ name: "", email: "", message: "" });
     };
 
     return (

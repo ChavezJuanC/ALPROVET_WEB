@@ -10,7 +10,7 @@ function Map() {
             zoom={13}
             scrollWheelZoom={false}
             style={{ height: "400px", width: "80%" }} // Ensure the map has dimensions
-            className="mt-8 mx-auto border-2 rounded-md border-softWhite"
+            className="mt-8 mx-auto border-2 rounded-md border-softWhite z-0"
         >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
