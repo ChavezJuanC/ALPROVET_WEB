@@ -22,13 +22,13 @@ function Contacto() {
 
     return (
         <div
-            className={`w-full min-h-screen flex justify-center items-center ${
+            className={`w-full h-screen content-center ${
                 theme
-                    ? "bg-gradient-to-b from-softWhite to-CustomPurpleSoft"
-                    : "bg-gradient-to-b from-CustomPurple to-CustomPurpleSoft"
+                    ? "bg-gradient-to-b from-softWhite to-CusotmPurpleLight"
+                    : "bg-gradient-to-b from-[#6823A2] to-[#2E0A5F]"
             }`}
         >
-            <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8 mx-4">
+            <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8 mx-auto relative bottom-10">
                 <h1 className="text-3xl font-bold text-center text-CustomPurple mb-6">
                     Contactanos
                 </h1>

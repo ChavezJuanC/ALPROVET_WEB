@@ -7,7 +7,7 @@ function Reviews() {
         <ReviewCard
             userName={review.userName}
             review={review.review}
-            img={review.ImagePath}
+            img= "src/assets/AlproVetLogo.jpeg" //{review.ImagePath}
             link={review.link}
         />
     ));
