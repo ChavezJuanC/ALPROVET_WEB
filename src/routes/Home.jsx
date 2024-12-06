@@ -55,7 +55,7 @@ function Home() {
             <div className="block xl:flex justify-between">
                 <div className="2xl:mx-0 mt-10 xl:w-1/2">
                     <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-6xl text-center mb-12 lg:mt-20 mt-28">
-                        Ubicacion
+                        Ubicación
                     </h1>
                     <div className="w-full">
                         <Map />
@@ -63,7 +63,7 @@ function Home() {
                 </div>
                 <div className="w-3/4 xl:w-1/2 mx-auto xl:px-24">
                     <h1 className="text-CustomPurple font-bold text-3xl md:text-4xl lg:text-6xl text-center mb-12 mt-24 pt-6">
-                        Resenas
+                        Reseñas
                     </h1>
                     <div className="rounded-md border-softWhite overflow-auto bg-transparent shadow-xl">
                         <Reviews />
